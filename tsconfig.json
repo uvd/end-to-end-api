@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "dist",
+    "rootDir": "./",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "inlineSourceMap": true
+  },
+  "files": [
+    "typings/index.d.ts",
+    "lib/typings/end-to-end.d.ts",
+    "lib/main.ts",
+    "lib/aws.ts",
+    "lib/email.ts",
+    "lib/util.ts"
+  ]
+}

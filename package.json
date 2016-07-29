@@ -1,0 +1,19 @@
+{
+  "name": "customer-onboarding",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "4.14.x",
+    "fs": "0.0.2",
+    "request": "^2.72.0",
+    "typescript": "^1.8.10",
+    "util": "^0.10.3"
+  },
+  "scripts": {
+    "postinstall": "npm install -g typings typescript tsc && typings install",
+    "watch": "tsc --p tsconfig.json --watch",
+    "build": "tsc --p tsconfig.json",
+    "start": "node dist/lib/main.js"
+  },
+  "typescript": {}
+}
