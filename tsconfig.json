@@ -17,9 +17,6 @@
   "files": [
     "typings/index.d.ts",
     "lib/typings/end-to-end.d.ts",
-    "lib/main.ts",
-    "lib/aws.ts",
-    "lib/email.ts",
-    "lib/util.ts"
+    "lib/main.ts"
   ]
 }
