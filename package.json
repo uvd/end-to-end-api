@@ -1,11 +1,12 @@
 {
-  "name": "customer-onboarding",
+  "name": "end-to-end-api",
   "version": "0.0.1",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "4.14.x",
     "firebase": "^3.2.1",
     "fs": "0.0.2",
+    "node-uuid": "^1.4.7",
     "request": "^2.72.0",
     "socket.io": "^1.4.8",
     "typescript": "^1.8.10",

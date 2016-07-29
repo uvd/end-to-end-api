@@ -3,6 +3,7 @@ import * as bodyParser from 'body-parser';
 import * as firebase from 'firebase';
 import * as socketIo from 'socket.io';
 import * as http from 'http';
+import * as uuid from 'node-uuid';
 
 const app = express();
 const server = http.createServer(app);
@@ -23,8 +24,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
-
 app.get('/episodes', (req, res, next) => {
 
     firebase.database().ref('episodes').once('value').then(function(snapshot) {
@@ -34,7 +33,16 @@ app.get('/episodes', (req, res, next) => {
 
 });
 
+app.post('/suggestion', (req, res, next) => {
 
+    firebase.database().ref('suggestion/' + uuid.v4()).set({
+        name: req.body.name ? req.body.name : 'Anonymous',
+        topic: req.body.topic,
+        date_submitted: Date.now()
+    });
+
+    res.end();
+});
 
 io.on('connection', function(socket) {
 
