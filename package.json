@@ -16,5 +16,8 @@
     "build": "tsc --p tsconfig.json",
     "start": "node dist/lib/main.js"
   },
-  "typescript": {}
+  "typescript": {},
+  "engines": {
+    "node": "6.2.0"
+  }
 }
