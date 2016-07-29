@@ -29,4 +29,4 @@ app.get('/episodes', (req, res, next) => {
 });
 
 
-app.listen(8087);
+app.listen(process.env.PORT || 8087);
